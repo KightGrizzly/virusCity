@@ -1,34 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="theme-color" content="#fff">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="mobile-web-app-capable" content="yes">
-	<meta property="og:url" content="https://victorribeiro.com/isocity">
-	<meta property="og:type" content="Article">
-	<meta property="og:title" content="IsoCity">
-	<meta property="og:author" content="Victor Ribeiro">
-	<meta property="og:description" content="Isometric City Builder">
-	<meta property="og:image" content="https://victorribeiro.com/city/favicon.png">
-	<meta property="og:image:width" content="512">
-	<meta property="og:image:height" content="512">
-	<meta name="Description" content="Isometric City Builder">
-	<link rel="icon" href="favicon.png" sizes="256x256">
-	<link rel="apple-touch-icon" href="favicon.png">
-	<title>IsoCity</title>
-	<link rel="stylesheet" href="css/main.css">
-</head>
-<body>
 
-<section id="main">
-	<div id="tools"></div>
-	<div id="area">
-		<canvas id="bg"></canvas>
-		<canvas id="fg"></canvas>
-	</div>
-</section>
-<script src="js/main.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#fff">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta property="og:url" content="https://victorribeiro.com/isocity">
+    <meta property="og:type" content="Article">
+    <meta property="og:title" content="IsoCity">
+    <meta property="og:author" content="Victor Ribeiro">
+    <meta property="og:description" content="Isometric City Builder">
+    <meta property="og:image" content="https://victorribeiro.com/city/favicon.png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta name="Description" content="Isometric City Builder">
+    <link rel="icon" href="infected.png" sizes="256x256">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <title>VirusCity</title>
+    <link rel="stylesheet" href="css/resetstyle.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <nav class="nav-main">
+        <div onclick="openNav('mySideNav')" class="btn-toggle-nav"></div>
+        <h1 style="margin:auto">Welcome To Virus City!</h1>
+        <div class="counter-border">
+            <audio id="audioPlayer">
+             <source src="sound/walking.mp3" type="audio/mp3">
+            </audio>
+
+            <p style="display:inline;" id="time">Time:</p>
+            <p style="display:inline;" id="people-Infected">People Infected:</p>
+
+        </div>
+    </nav>
+
+
+    <div id="tools" class="sideNav" style="background-color: white">
+    </div>
+
+
+    <div id="mySideNav" class="sideNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav('mySideNav')">
+		&times;</a>
+        <div id="form-border">
+        <h4 style="margin-left: 20%;">Quarintine:</h4>
+        <form id="sim-var">
+            <input style="color:#fff" type="checkbox" name="action1" value="">
+            <label for="action1">Close Schools</label><br>
+            <input type="checkbox" name="action2" value="" />
+            <label for="action2">Work from Home</label><br>
+            <input type="checkbox" name="action3" value="" />
+            <label for="action3">Close Stores</label><br>
+            <input type="checkbox" name="action4" value="" />
+            <label for="action4">Close Gyms</label><br>
+            <br/>
+            <input style="margin-left: 0%;" class="myButton" id="start-simulation" type="submit" value="Run Simulation" />
+            </br>
+            <br/>
+            <button class="myButton" id="AddPerson"> AddPerson</button>
+            </br>
+            <br/>
+            <button style="margin-left: 7.5%;" class="myButton" id="Modifycity"> Modifycity</button>
+        </form>
+       
+        </div>
+    </div>
+
+
+
+
+
+
+    <section id="main">
+        <div id="area">
+            <canvas id="bg"></canvas>
+            <canvas id="fg"></canvas>
+        </div>
+    </section>
+
+    <script src="js/person.js"></script>
+    <script src="js/grid.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+
+
 
 </body>
+
 </html>
