@@ -13,16 +13,16 @@
 
 - Objective of the game: How does closing schools stop a virus??
 
-////////////////////////////////////////////////////////////
+////////////////////////
 // HTML5 Canvas Rendring in JavaScript
-////////////////////////////////////////////////////////////
+//////////////////////////////
 
 - We implemented such a modelling game as a web application using JavaScript and HTML5 canvas rendering. 
 - The web application mainly consists of a full size HTML canvas on which the layout of a city is rendered.
 
-////////////////////////////////////////////////////////////
+///////////////////////////////
 // Isometric graphics like simCity
-////////////////////////////////////////////////////////////
+/////////////////////////////
 
 - The graphical concept is closely related to realtime-strategy games like simCity
 - The 2D grid is shown as an isometric view that gives the impression of a 3D environment. 
@@ -46,9 +46,9 @@ Now the simulation part:
  - We have an event loop running that executes the main logic a few times (ticks) per second.
  - After each change/timestep we render the entire scene to the canvas. 
 
-////////////////////////////////////////
+/////////////////////////////
 // Complex Database Model: People have Schedues that relate to tiles
-////////////////////////////////////////
+//////////////////////
 
  - People live in buildings and they have a schedule (going to work, going to school, etc.)
  - The People's schedule associates a person to a destination tile to which that person will go at a certain time (i.e., go to work).
