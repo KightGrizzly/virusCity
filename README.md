@@ -46,17 +46,17 @@ Now the simulation part:
  - We have an event loop running that executes the main logic a few times (ticks) per second.
  - After each change/timestep we render the entire scene to the canvas. 
 
-////////////////////////////////////////////////////////////
+////////////////////////////////////////
 // Complex Database Model: People have Schedues that relate to tiles
-////////////////////////////////////////////////////////////
+////////////////////////////////////////
 
  - People live in buildings and they have a schedule (going to work, going to school, etc.)
  - The People's schedule associates a person to a destination tile to which that person will go at a certain time (i.e., go to work).
  - A global timer ensures that a people's schedule is executed when the appropriate time is due. 
   
-////////////////////////////////////////////////////////////
+/////////////////////////////
 // We use an actual A* Pathfinding approach like real strategy games do!
-////////////////////////////////////////////////////////////
+//////////////////////////
 
  - We then invoke the A* Pathfinding Algorithm to efficiently compute the shortest path for people to move on (like in real strategy games!)
  - It explores tiles based on their properties (if people can realistically move on them (building, street, water, each having different properties)
@@ -64,9 +64,9 @@ Now the simulation part:
  - Note how people only follow streets, as they can not walk on non accessible tiles!
 
 
-////////////////////////////////////////////////////////////
+///////////////////////////////
 // Details about the A* Pathfinding approach
-////////////////////////////////////////////////////////////
+//////////////////////////
 
 - The grid consists of nxn tiles
 - We are looking for a (shortest) path between start tile A and destination tile B
