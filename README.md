@@ -1,6 +1,6 @@
 # virusCity
 // Web-based Real-time Strategy game with 3D view and dynamic pathfinding!
-////////////////////////////////////////////////////////////
+//////
 
 - The project idea consists of a multi agent epidemic simulation that shows the spread of a virus in a city environment.
 - How it came to be: (reference the inspiration by corona situation / remote lectures..) 
@@ -30,9 +30,9 @@
 - The city itself is made actually up of a 50x50 grid with 2.5k two dimensional tiles
   - The tiles can contain buildings or streets that each have certain properties.
 
-////////////////////////////////////////////////////////////
+/////////////////////////////////
 // Database Persistance in Active Record
-////////////////////////////////////////////////////////////
+///////////////////////////////
 
 We have a database persistence by dynamically storing tiles in a backend, using Active record in Ruby on Rails:
 - This allows us to interactively edit tiles and permanently store changes!
