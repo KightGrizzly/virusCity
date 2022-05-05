@@ -1,2 +1,3 @@
 This is the edit to this text file.
 editing the second line of the newfile file. This may not work
+I am now editing the second line of this file.
